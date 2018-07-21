@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="809a534995b2406fbac489809dc932cb" Name="Diagram1">
+        <EntityTypeShape EntityType="MyeStoreModel.BanBe" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.ChiTietHD" Width="1.5" PointX="8.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.ChuDe" Width="1.5" PointX="6" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.GopY" Width="1.5" PointX="8.25" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.HangHoa" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.HoaDon" Width="1.5" PointX="6" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.HoiDap" Width="1.5" PointX="6" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.KhachHang" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.Loai" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.NhaCungCap" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.NhanVien" Width="1.5" PointX="3.75" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.PhanCong" Width="1.5" PointX="11" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.PhanQuyen" Width="1.5" PointX="11" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.PhongBan" Width="1.5" PointX="8.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.sysdiagram" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.TrangThai" Width="1.5" PointX="3.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.TrangWeb" Width="1.5" PointX="8.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.YeuThich" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyeStoreModel.vChiTietHoaDon" Width="1.5" PointX="9.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="MyeStoreModel.FK_BanBe_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_QuangBa_HangHoa" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_OrderDetails_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_OrderDetails_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_ChuDe_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_GopY_ChuDe" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_Products_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_Products_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_YeuThich_HangHoa" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_HoaDon_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_HoaDon_TrangThai" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_Orders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_HoiDap_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_Favorites_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_PhanCong_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_PhanCong_PhongBan" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_PhanQuyen_PhongBan" ManuallyRouted="false" />
+        <AssociationConnector Association="MyeStoreModel.FK_PhanQuyen_TrangWeb" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ThucHanhWebTMDT.Models.HangHoa>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_FrontEndLayout.cshtml";
+}
+
+<div class="container">
+    <div class="products-grids">
+        <div class="col-md-12 products-grid-left">
+            <div class="products-grid-lft">
+                @foreach (var hh in Model)
+                {
+                    <div class="products-grd">
+                        <div class="p-one simpleCart_shelfItem prd">
+                            <a href="single.html">
+                                <img src="~/Hinh/HangHoa/@hh.Hinh" alt="" class="img-responsive" />
+                            </a>
+                            <h4>@hh.TenHH</h4>
+                            <p><a class="item_add" href="#"><i class="glyphicon glyphicon-shopping-cart"></i> <span class=" item_price valsa">@Html.FormatValue(hh.DonGia, "{0:#,##0} $")</span></a></p>
+                            <div class="pro-grd">
+                                <a href="single.html">Quick View</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+</div>
