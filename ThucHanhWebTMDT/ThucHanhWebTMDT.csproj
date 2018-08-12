@@ -207,6 +207,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MyEStore.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\MyTools.cs" />
     <Compile Include="Models\NhaCungCap.cs">
       <DependentUpon>MyEStore.tt</DependentUpon>
     </Compile>

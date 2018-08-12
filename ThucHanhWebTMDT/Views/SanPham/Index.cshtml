@@ -12,13 +12,13 @@
                 {
                     <div class="products-grd">
                         <div class="p-one simpleCart_shelfItem prd">
-                            <a href="@Url.Action("ChiTiet", "SanPham", new { id = @hh.MaHH })">
+                            <a href="san-pham/@hh.TenAlias">
                                 <img src="~/Hinh/HangHoa/@hh.Hinh" alt="" class="img-responsive" />
                             </a>
                             <h4>@hh.TenHH</h4>
                             <p><a class="item_add" href="#"><i class="glyphicon glyphicon-shopping-cart"></i> <span class=" item_price valsa">@Html.FormatValue(hh.DonGia, "{0:#,##0} $")</span></a></p>
                             <div class="pro-grd">
-                                <a href="@Url.Action("ChiTiet", "SanPham", new { id = @hh.MaHH })">Chi tiết</a>
+                                <a href="san-pham/@hh.TenAlias">Chi tiết</a>
                             </div>
                         </div>
                     </div>

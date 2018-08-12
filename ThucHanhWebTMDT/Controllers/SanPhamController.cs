@@ -21,5 +21,26 @@ namespace ThucHanhWebTMDT.Controllers
             var hh = db.HangHoas.SingleOrDefault(p => p.MaHH == id);
             return View(hh);
         }
+
+        public ActionResult SEOUrl(string tenHHSEO)
+        {
+            var id = int.Parse(tenHHSEO.Substring(0, tenHHSEO.IndexOf("-")));
+            var hh = db.HangHoas.SingleOrDefault(p => p.MaHH == id);
+            return View("ChiTiet", hh);
+        }
+
+        /// <summary>
+        /// Covert correct data
+        /// </summary>
+        /// <returns></returns>
+        public string ConvertUrlFriendly()
+        {
+            foreach (HangHoa hh in db.HangHoas)
+            {
+                hh.TenAlias = MyTools.ToURLFriendly(hh.MaHH, hh.TenHH);
+            }
+            db.SaveChanges();
+            return "OK";
+        }
     }
 }
